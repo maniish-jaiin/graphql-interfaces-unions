@@ -32,11 +32,13 @@ You can trigger this query in the playground console.
       price
     }
   }
-}```
+}
 
+```
 Response
 
-```{
+``````
+{
   "data": {
     "getVehicles": [
       {
@@ -50,4 +52,4 @@ Response
       }
     ]
   }
-}```
+}
