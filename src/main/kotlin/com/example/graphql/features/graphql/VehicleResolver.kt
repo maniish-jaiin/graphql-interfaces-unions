@@ -1,6 +1,7 @@
 package com.example.graphql.features.graphql
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver
+import com.example.graphql.features.model.IVehicle
 import com.example.graphql.features.model.Vehicle
 import com.example.graphql.features.service.VehicleService
 import org.springframework.stereotype.Component
@@ -9,5 +10,9 @@ import org.springframework.stereotype.Component
 class VehicleResolver(private val vehicleService: VehicleService) : GraphQLQueryResolver {
     fun getVehicles(): List<Vehicle> {
         return vehicleService.getVehicles()
+    }
+
+    fun getIVehicles(): List<IVehicle> {
+        return vehicleService.getIVehicles()
     }
 }
