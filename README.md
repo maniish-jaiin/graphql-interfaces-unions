@@ -16,9 +16,9 @@ $ ./gradlew bootRun
 Once the application is up and running, go to `http://localhost:8080/playground`
 
 ## Query
-It support one query names `getVehicles`
+It support two queries: `getVehicles` and `getIVehicles`. Implemented using `Union` and `Interface` respectively.
 
-You can trigger this query in the playground console.
+You can trigger query in the playground console.
 
 ```query{
   getVehicles{
