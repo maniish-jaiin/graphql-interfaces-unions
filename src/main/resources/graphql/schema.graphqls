@@ -1,0 +1,17 @@
+type Query{
+    hello: String
+    getVehicles : [Vehicle]!
+}
+
+union Vehicle = Car | Bike
+
+type Car {
+    name: String
+    price: Int
+    engineType: String
+}
+
+type Bike {
+    name: String
+    price: Int
+}
